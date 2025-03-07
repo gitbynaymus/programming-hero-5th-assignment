@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link rel="stylesheet" href="style/style.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,5 +50,238 @@
               </div>
         </nav>
     </header>
+    <main class="mx-auto  grid max-w-7xl grid-cols-4 gap-6 pb-20 pt-5">
+        <!-- Main left section -->
+        <section class="col-start-1 col-end-4 rounded-2xl bg-white shadow-sm">
+            <!-- Main head -->
+          <section
+            class="flex gap-6 border-b-1 border-dashed border-b-blue/20 p-6"
+          >
+            <div class="flex-2 rounded-2xl bg-blue-200 shadow-sm">
+              <div class="flex items-center p-6">
+                <span
+                  class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
+                >
+                  <img class="h-auto w-5" src="./assets/checkbox.png" alt="" />
+                </span>
+                <div>
+                  <p class="font-medium text-nowrap">Task Assigned</p>
+                  <p class="text-2xl font-bold" id="total-task">6</p>
+                </div>
+              </div>
+            </div>
+  
+            <div
+              class="shadow-sm overflow-hidden z-1 flex flex-3 cursor-pointer relative items-center rounded-2xl bg-gradient-to-r from-indigo-500 to-blue-500  p-6 clear-btn before" id="view-blog" onclick="window.location.href = 'blog.html'"
+            >
+              <img class="mr-4 h-auto w-15" src="./assets/board.png" alt="" id="ap"/>
+              <h3 class="text-lg font-medium text-white" >
+                Discover Something <br />
+                New Today!
+              </h3>
+            </div>
+  
+            <div class="flex-2 rounded-2xl bg-blue-200 shadow-sm">
+              <div class="flex items-center p-6">
+                <span
+                  class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
+                >
+                  <img class="h-auto w-5" src="./assets/calender.png" alt="" />
+                </span>
+                <div>
+                  <p class="text-lg" id="day">Wed,</p>
+                  <p class="text-lg font-bold" id="month">Jul 28 2025</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 6 card -->
+          <section class="grid grid-cols-3 gap-6 p-6">
+            <!-- !Fix Mobile  -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >ShopEase</span
+            >
+            <h2 class="task-title text-xl my-4">Fix Mobile Button Issue</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+            <!--! Dark Mode -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >CloudSync</span
+            >
+            <h2 class="task-title text-xl my-4">Add Dark Mode</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Store the user's preference in localStorage, update CSS
+                variables dynamically, and apply a smooth transition effect.
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- !Optimize Home page -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >SwiftPay</span
+            >
+            <h2 class="task-title text-xl my-4">Optimize Home page</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Enhance loading speed, layout, and responsiveness for a better user experience. Optimize images, minimize unused CSS/JS, and refine content structure.
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- ! add Emoji Section -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >Meta</span
+            >
+            <h2 class="task-title text-xl my-4">Add new emoji 🤲</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Update UI with relevant emojis to improve visual appeal and user engagement. Ensure compatibility across devices and browsers for a consistent experience.
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+           <!-- ! Integrate OpenAI API  -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >Google LLC</span
+            >
+            <h2 class="task-title text-xl my-4">Integrate OpenAI API</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Connect the application to OpenAI's API to add AI-driven features. Implement secure API calls and optimize response handling for better performance.
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- !Improve Job searching  -->
+          <div class="bg-blue-200 p-6 rounded-lg task-card">
+            <span class="bg-white p-1 rounded-sm"
+              >Glassdoor</span
+            >
+            <h2 class="task-title text-xl my-4">Improve Job searching</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="text-sm opacity-50 task-description"
+              >
+              Enhance search functionality by refining filters, sorting options, and keyword matching. Improve UX by providing faster, more accurate, and user-friendly job listings.
+              </div>
+            </div>
+            <div
+              class=" flex justify-between task-card-footer"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="btn btn-primary cursor-pointer">
+                Completed
+              </button>
+            </div>
+          </div>
+          </section>
+        </section>
+        <!-- main right section -->
+        <aside class="col-start-4 col-end-5 rounded-2xl bg-white shadow-sm">
+          <section class="border-b-1 border-dashed border-b-blue/20 p-6">
+            <div class="mx-auto w-full text-center">
+              <div class="flex items-center justify-center">
+                <img class="mr-3 h-auto w-5" src="./assets/activity.png" alt="" />
+                <span class="text-lg">Activity Log</span>
+              </div>
+              <button
+                class="clear-btn btn btn-primary mt-3 task-complete-btn  cursor-pointer" id="clear-history"
+              >
+                Clear History
+              </button>
+              
+          </section>
+          <section class="flex flex-col gap-4 p-6" id="activity-log">
+            <!-- !Here activity log will be added dynamically  -->
+          </section>
+        </aside>
+      </main>
 </body>
 </html>
